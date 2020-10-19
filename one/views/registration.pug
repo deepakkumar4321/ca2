@@ -1,0 +1,24 @@
+head
+  title
+    | Document
+form(method='get' action='/handleForm' name='registrationForm')
+  | Name
+  input(type='text' name='username')
+  br
+  | Email
+  input(type='email' name='email')
+  br
+  | Phone Number
+  input(type='number' name='number')
+  br
+  | City
+  select#city(name='city')
+    option(value='delhi') delhi
+    option(value='mumbai') mumbai
+    option(value='banglore') banglore
+    option(value='chennai') chennai
+  br
+  | DOB
+  input(type='date' name='date')
+  br
+  input(type='submit' value='done')
